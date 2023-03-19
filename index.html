@@ -1,45 +1,67 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <!-- Set the page title -->
-    <title>Assignment 03</title>
 
-    <!-- Set the charset we're using to UTF-8 -->
-    <meta charset="UTF-8" />
+<head>
 
-    <!-- Set the screens default zoom / scale to 1 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Assignment 03</title>
 
-    <!-- We are using a CSS Reset file to standardize browser default css -->
-    <link rel="stylesheet" href="reset.css" />
+	<meta charset="UTF-8" />
 
-    <!-- This is where all of our awesome CSS code goes -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Set the Favicon  -->
+    <link rel="stylesheet" href="reset.css" />
+
     <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
-  </head>
-  <body>
-    <!--
 
-      ADD YOUR ASSIGNMENT 03 CODE
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
 
-      YOU MAY REMOVE THE BOILERPLATE CODE BELOW
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
 
-      IMPORTANT CHECKLIST:
+</head>
 
-      - Are users able to create and delete to do list items?
-      - Have you set a favicon? (included - but it's a rocket)
-      - Do you have a css reset file? (included)
-      - Has a team member conducted a code review and left a GitHub Issue in your repo?
-      - Have you conducted a code review and left a GitHub Issue on your team member's repo?
+  
+<body>
 
-    -->
     <main>
-      <div id="app"></div>
-    </main>
 
-    <!-- This is where we add our awesome JavaScript code -->
-    <script src="./main.js"></script>
-  </body>
+      <div id="app"></div>
+     
+        <div class="container">
+          <p class="brand">Simple Co.</p>
+          <h1 class="app-title">TO-DO LIST</h1>
+          <ul class="todo-list js-todo-list"></ul>
+
+          <div class="empty-state">
+            <img class="checklist-icon" src="Assets/Checklist Icon.png"></img>
+            <h2 class="empty-state__title">Add your first task below!</h2>
+          </div>
+
+          <form class="js-form">
+            <input autofocus type="text" aria-label="Enter a new to-do item here!" placeholder="E.g. Walk the dog" class="js-todo-input">
+          </form>
+
+        </div>
+         
+
+      </main>
+
+      <svg>
+        <defs>
+          <symbol id="delete-icon" viewBox="0 0 448 448"><path d="m224 0c-123.710938 0-224 100.289062-224 224s100.289062 224 224 224 224-100.289062 224-224c-.132812-123.65625-100.34375-223.867188-224-224zm124.449219 325.824219c4.15625 4.015625 5.828125 9.964843 4.363281 15.558593s-5.835938 9.964844-11.429688 11.429688-11.542968-.207031-15.558593-4.363281l-101.824219-101.824219-101.824219 101.824219c-6.277343 6.0625-16.257812 5.976562-22.429687-.195313s-6.257813-16.152344-.195313-22.429687l101.824219-101.824219-101.824219-101.824219c-4.15625-4.015625-5.828125-9.964843-4.363281-15.558593s5.835938-9.964844 11.429688-11.429688 11.542968.207031 15.558593 4.363281l101.824219 101.824219 101.824219-101.824219c6.277343-6.0625 16.257812-5.976562 22.429687.195313s6.257813 16.152344.195313 22.429687l-101.824219 101.824219zm0 0" fill="#D80027"/></symbol>
+        </defs>
+      </svg>
+
+    <script src="main.js"></script>
+
+</body>
+
 </html>
